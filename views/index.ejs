@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>APP: Vai filhão</title>
+</head>
+<body>
+<h1>APP do Leandro</h1>
+
+	<ul class="quotes">
+	  <% for(var i=0; i<quotes.length; i++) {%>
+	    <li class="quote">
+	      <span><%= quotes[i].name %></span>
+	      <span><%= quotes[i].quote %></span>
+	    </li>
+	  <% } %>
+	</ul>
+
+	<form action ='/quotes' method="POST">
+		<input type="text" placeholder="name" name="Name">
+		<input type="text" placeholder="quote" name="Quote">
+		<button type="submit">Submit</button>
+	</form>
+
+	<div> 
+		<h2> Pressione o botão para ser H4CK34D0 e trocar a ultima quote<h2>
+
+		<button id="update">Perca peso sem fazer nada!</button>
+	</div>
+
+	<div>
+		<h2>Clique para apagar o seu passado</h2>
+		<button id="delete">Apagar</button>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+</html>
